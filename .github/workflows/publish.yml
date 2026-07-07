@@ -1,0 +1,69 @@
+name: Atualizar feeds e publicar
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # a cada 30 minutos (UTC)
+  workflow_dispatch:          # botão "Run workflow" para atualizar na hora
+  push:
+    branches: [main]          # editar feeds.opml já dispara republicação
+
+permissions:
+  contents: write   # keepalive
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-e-publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restaurar histórico de artigos
+        uses: actions/cache/restore@v4
+        with:
+          path: .nr-cache
+          key: nr-data-${{ github.run_id }}
+          restore-keys: |
+            nr-data-
+
+      - name: Buscar feeds e montar o site
+        run: python3 build_static.py --cache .nr-cache --out _site
+
+      - name: Salvar histórico de artigos
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .nr-cache
+          key: nr-data-${{ github.run_id }}
+
+      - name: Keepalive (GitHub desativa agendamentos após 60 dias sem commits)
+        run: |
+          LAST=$(git log -1 --format=%ct)
+          NOW=$(date +%s)
+          if [ $(( (NOW - LAST) / 86400 )) -ge 50 ]; then
+            git config user.name "nerd-reader"
+            git config user.email "actions@users.noreply.github.com"
+            git commit --allow-empty -m "keepalive: mantém a atualização automática ativa"
+            git push
+          fi
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Empacotar site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4

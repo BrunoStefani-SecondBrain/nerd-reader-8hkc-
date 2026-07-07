@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Bruno subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Tech" title="Tech">
+            <outline type="rss" text="MacMagazine" title="MacMagazine" xmlUrl="http://macmagazine.com.br/feed/" htmlUrl="https://macmagazine.com.br/"/>
+            <outline type="rss" text="MIT Technology Review" title="MIT Technology Review" xmlUrl="http://www.technologyreview.com/rss/rss.aspx" htmlUrl="https://www.technologyreview.com"/>
+            <outline type="rss" text="DeepMind " title="DeepMind " xmlUrl="https://deepmind.com/blog/feed/basic/" htmlUrl="https://deepmind.google/blog/"/>
+            <outline type="rss" text="Fast Company" title="Fast Company" xmlUrl="http://feeds.feedburner.com/fastcompany/headlines" htmlUrl="https://www.fastcompany.com"/>
+            <outline type="rss" text="Hugging Face - Blog" title="Hugging Face - Blog" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog"/>
+        </outline>
+        <outline text="Lifestyle" title="Lifestyle">
+            <outline type="rss" text="NYT Magazine" title="NYT Magazine" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/Magazine.xml" htmlUrl="https://www.nytimes.com/section/magazine"/>
+            <outline type="rss" text="New York Times - Travel" title="New York Times - Travel" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/Travel.xml" htmlUrl="https://www.nytimes.com/section/travel"/>
+        </outline>
+        <outline text="Media" title="Media">
+            <outline type="rss" text="GKPB – Geek Publicitário" title="GKPB – Geek Publicitário" xmlUrl="http://geekpublicitario.com.br/feed/" htmlUrl="https://gkpb.com.br/"/>
+            <outline type="rss" text="Seth Godin's Blog " title="Seth Godin's Blog " xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog"/>
+            <outline type="rss" text="Meio&amp;Mensagem" title="Meio&amp;Mensagem" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCIJwKI84CglciGM9aC0xcPQ" htmlUrl="https://www.youtube.com/channel/UCIJwKI84CglciGM9aC0xcPQ"/>
+            <outline type="rss" text="B9" title="B9" xmlUrl="http://feeds.feedburner.com/brainstorm9" htmlUrl="https://www.b9.com.br/"/>
+        </outline>
+        <outline text="Sports" title="Sports">
+            <outline type="rss" text="Pro Football: NFL no Brasil com Notícias e Opinião" title="Pro Football: NFL no Brasil com Notícias e Opinião" xmlUrl="http://profootball.com.br/feed/" htmlUrl="https://profootball.com.br/"/>
+        </outline>
+        <outline text="Business" title="Business">
+            <outline type="rss" text="Forbes Brasil" title="Forbes Brasil" xmlUrl="http://www.forbes.com.br/feed/" htmlUrl="https://forbes.com.br/"/>
+            <outline type="rss" text="Bloomberg Línea Brasil" title="Bloomberg Línea Brasil" xmlUrl="https://www.bloomberglinea.com.br/arc/outboundfeeds/rss.xml" htmlUrl="https://www.bloomberglinea.com.br"/>
+            <outline type="rss" text="Thinkers50" title="Thinkers50" xmlUrl="http://www.thinkers50.com/feed/" htmlUrl="https://thinkers50.com"/>
+            <outline type="rss" text="Brazil Journal" title="Brazil Journal" xmlUrl="http://braziljournal.com/rss" htmlUrl="https://braziljournal.com"/>
+            <outline type="rss" text="Entrepreneur" title="Entrepreneur" xmlUrl="http://feeds.feedburner.com/entrepreneur/latest" htmlUrl="https://www.entrepreneur.comrss-feed/latest/"/>
+            <outline type="rss" text="HBS Working Knowledge" title="HBS Working Knowledge" xmlUrl="http://hbswk.hbs.edu/rss/rss.xml" htmlUrl="http://hbswk.hbs.edu/"/>
+            <outline type="rss" text="Business | The Atlantic" title="Business | The Atlantic" xmlUrl="http://feeds.feedburner.com/AtlanticBusinessChannel" htmlUrl="https://www.theatlantic.com/business/"/>
+            <outline type="rss" text="McKinsey" title="McKinsey" xmlUrl="http://rss.mckinseyquarterly.com/ad" htmlUrl="https://www.mckinsey.com/"/>
+            <outline type="rss" text="NeoFeed" title="NeoFeed" xmlUrl="https://neofeed.com.br/feed/" htmlUrl="https://neofeed.com.br/"/>
+            <outline type="rss" text="Metro Quadrado - Latest news" title="Metro Quadrado - Latest news" xmlUrl="https://metroquadrado.com/feed/" htmlUrl="https://metroquadrado.com"/>
+            <outline type="rss" text="Stratechery by Ben Thompson" title="Stratechery by Ben Thompson" xmlUrl="http://stratechery.com/feed/" htmlUrl="https://stratechery.com"/>
+            <outline type="rss" text="pipelinevalor" title="pipelinevalor" xmlUrl="https://pipelinevalor.globo.com/rss/pipelinevalor" htmlUrl="https://pipelinevalor.globo.com/"/>
+            <outline type="rss" text="Valor Econômico" title="Valor Econômico" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC48mLXk1ASg1EQbaS3MheWQ" htmlUrl="https://www.youtube.com/channel/UC48mLXk1ASg1EQbaS3MheWQ"/>
+            <outline type="rss" text="Harvard Business Review " title="Harvard Business Review " xmlUrl="http://feeds.harvardbusiness.org/harvardbusiness/" htmlUrl="http://hbr.org"/>
+            <outline type="rss" text="Fast Company" title="Fast Company" xmlUrl="http://feeds.feedburner.com/fastcompany/headlines" htmlUrl="https://www.fastcompany.com"/>
+            <outline type="rss" text="NYT &gt; Business" title="NYT &gt; Business" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/Business.xml" htmlUrl="https://www.nytimes.com/section/business"/>
+            <outline type="rss" text="Nikkei Asian Review" title="Nikkei Asian Review" xmlUrl="http://asia.nikkei.com/rss/feed/nar" htmlUrl="https://asia.nikkei.com/"/>
+            <outline type="rss" text="The a16z Show" title="The a16z Show" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:62921190/sounds.rss" htmlUrl="https://a16z.simplecast.com"/>
+        </outline>
+        <outline text="Boards" title="Boards">
+            <outline type="rss" text="Poliedro Educação" title="Poliedro Educação" xmlUrl="https://news.google.com/rss/search?hl=pt-PT&amp;gl=PT&amp;ceid=PT:pt-150&amp;q=%22Poliedro+Educa%C3%A7%C3%A3o%22" htmlUrl="https://news.google.com/search?hl=pt-PT&amp;gl=PT&amp;ceid=PT:pt-150&amp;q=%22Poliedro+Educa%C3%A7%C3%A3o%22"/>
+        </outline>
+        <outline text="Good Journalism" title="Good Journalism">
+            <outline type="rss" text="revista piauí" title="revista piauí" xmlUrl="http://piaui.folha.uol.com.br/feed/" htmlUrl="https://piaui.uol.com.br/"/>
+            <outline type="rss" text="Semafor" title="Semafor" xmlUrl="https://www.semafor.com/rss.xml" htmlUrl="https://www.semafor.com"/>
+            <outline type="rss" text="Dense Discovery" title="Dense Discovery" xmlUrl="https://www.densediscovery.com/feed/" htmlUrl="https://www.densediscovery.com"/>
+            <outline type="rss" text="The Atlantic " title="The Atlantic " xmlUrl="http://feeds.feedburner.com/TheAtlantic" htmlUrl="https://www.theatlantic.com/"/>
+            <outline type="rss" text="Axios" title="Axios" xmlUrl="https://www.axios.com/feeds/feed.rss" htmlUrl="https://www.axios.com/"/>
+            <outline type="rss" text="Substack" title="Substack" xmlUrl="https://feedly.com/email/3yzhywj9myv96qr82akb"/>
+            <outline type="rss" text="Marginal Revolution" title="Marginal Revolution" xmlUrl="https://feeds.feedblitz.com/marginalrevolution" htmlUrl="https://marginalrevolution.com/"/>
+            <outline type="rss" text="Nexo Jornal" title="Nexo Jornal" xmlUrl="https://www.nexojornal.com.br/rss.xml" htmlUrl="https://www.nexojornal.com.br"/>
+            <outline type="rss" text="Aeon | a world of ideas" title="Aeon | a world of ideas" xmlUrl="https://aeon.co/feed.rss" htmlUrl="https://aeon.co"/>
+            <outline type="rss" text="The New Yorker" title="The New Yorker" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCsD-Qms-AkXDrsU962OicLw" htmlUrl="https://www.youtube.com/channel/UCsD-Qms-AkXDrsU962OicLw"/>
+            <outline type="rss" text="Meio" title="Meio" xmlUrl="http://www.canalmeio.com.br/feed/" htmlUrl="https://www.canalmeio.com.br"/>
+            <outline type="rss" text="Puck" title="Puck" xmlUrl="https://puck.news/feed/" htmlUrl="https://puck.news/"/>
+        </outline>
+    </body>
+</opml>

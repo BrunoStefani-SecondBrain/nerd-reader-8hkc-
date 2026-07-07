@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>NERD Reader 🦞</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦞</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ======================= Sidebar ======================= -->
+  <aside id="sidebar">
+    <div class="side-head">
+      <span class="logo">🦞 <strong>NERD Reader</strong></span>
+      <button id="btn-collapse" class="icon-btn" title="Recolher menu">⟨</button>
+    </div>
+
+    <nav id="side-nav">
+      <a class="nav-item" data-scope="today" href="#/today">
+        <span class="nav-ico">☀️</span><span class="nav-label">Hoje</span>
+        <span class="count" id="count-today"></span>
+      </a>
+      <a class="nav-item" data-scope="all" href="#/all">
+        <span class="nav-ico">📚</span><span class="nav-label">Todos os artigos</span>
+        <span class="count" id="count-all"></span>
+      </a>
+      <a class="nav-item" data-scope="starred" href="#/starred">
+        <span class="nav-ico">⭐</span><span class="nav-label">Salvos</span>
+        <span class="count muted" id="count-starred"></span>
+      </a>
+      <div class="side-sep"></div>
+      <div id="cat-tree"><!-- categorias + feeds via JS --></div>
+    </nav>
+
+    <div class="side-foot">
+      <div id="updated-at" class="updated-note"></div>
+      <div class="side-foot-row">
+        <a id="btn-export" class="mini-btn" href="feeds.opml" download="nerd-reader.opml" title="Baixar OPML dos feeds">Exportar</a>
+        <button id="btn-theme" class="mini-btn" title="Alternar tema">◐ Tema</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================= Conteúdo ======================= -->
+  <main id="main">
+    <header id="topbar">
+      <button id="btn-menu" class="icon-btn" title="Menu">☰</button>
+      <div id="view-title">
+        <h1 id="title-text">Todos os artigos</h1>
+        <span id="title-count" class="pill"></span>
+      </div>
+      <div class="top-actions">
+        <div id="search-wrap">
+          <input id="search" type="search" placeholder="Buscar artigos… ( / )" autocomplete="off">
+        </div>
+        <button id="btn-filter" class="chip" title="Alternar entre não lidos e todos">Não lidos</button>
+        <button id="btn-view" class="icon-btn" title="Alternar visual lista/cards">▦</button>
+        <button id="btn-mark-all" class="icon-btn" title="Marcar tudo como lido (Shift+A)">✓✓</button>
+        <button id="btn-refresh" class="icon-btn" title="Recarregar artigos (r)">⟳</button>
+      </div>
+    </header>
+
+    <div id="refresh-bar" hidden><span class="spinner"></span> Carregando artigos…</div>
+
+    <section id="list-wrap">
+      <div id="list" class="view-list"></div>
+      <div id="list-status"></div>
+      <button id="btn-more" hidden>Carregar mais</button>
+    </section>
+  </main>
+
+  <!-- ======================= Leitor ======================= -->
+  <div id="reader" hidden>
+    <div id="reader-backdrop"></div>
+    <article id="reader-panel">
+      <header id="reader-bar">
+        <button class="icon-btn" id="reader-close" title="Fechar (Esc)">✕</button>
+        <div class="reader-actions">
+          <button class="icon-btn" id="reader-prev" title="Anterior (k)">↑</button>
+          <button class="icon-btn" id="reader-next" title="Próximo (j)">↓</button>
+          <button class="icon-btn" id="reader-unread" title="Marcar como não lido (m)">◌</button>
+          <button class="icon-btn" id="reader-star" title="Salvar (s)">☆</button>
+          <a class="icon-btn" id="reader-open" target="_blank" rel="noopener" title="Abrir original (v)">↗</a>
+        </div>
+      </header>
+      <div id="reader-scroll">
+        <div id="reader-content"></div>
+      </div>
+    </article>
+  </div>
+
+  <div id="toast" hidden></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
